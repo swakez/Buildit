@@ -1,0 +1,22 @@
+div.scrollable-table-wrapper {
+    height: 300px;
+    overflow: auto;
+}
+thead{
+    position: sticky;
+    top: 0;
+   
+    background-color: white;
+   
+}
+
+.table thead tr td{
+    padding: 14px 10px;
+    color: #000;
+    font-weight: 500;
+}
+  
+
+/* .tbody{
+height: 300px;
+} */
