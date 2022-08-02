@@ -1,0 +1,89 @@
+{% from "parts/_top_app_bar.html" import show_top_bar %}
+{% from "parts/_sidebar.html" import show_sidebar %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>BuildIt</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="{{ url_for('static',filename='vendors/mdi/css/materialdesignicons.min.css')}}">
+  <link rel="stylesheet" href="{{ url_for('static',filename='vendors/css/vendor.bundle.base.css')}}">
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- Layout styles -->
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/demo/style.css')}}">
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/demo/listed_project.css')}}">
+  <!-- End layout styles -->
+  <link rel="shortcut icon" href="{{ url_for('static',filename='images/favicon.png')}}" />
+</head>
+<body>
+<script src="{{ url_for('static',filename='js/preloader.js')}}"></script>
+
+
+  <div class="body-wrapper">
+    <!-- partial:../../partials/_sidebar.html -->
+      {{ show_sidebar() }}
+    <!-- partial -->
+    <div class="main-wrapper mdc-drawer-app-content">
+      <!-- partial:../../partials/_navbar.html -->
+      <header class="mdc-top-app-bar">
+        {{ show_top_bar() }}
+      </header>
+      <!-- partial -->
+      <div class="page-wrapper mdc-toolbar-fixed-adjust">
+        <main class="content-wrapper">
+          <div class="mdc-layout-grid">
+            <div class="mdc-layout-grid__inner">
+              <div class="mdc-layout-grid__cell--span-12">
+                <div class="mdc-card">
+                  <h4 class="card-title">Projects listed in Portal</h4>
+                  
+                  <div class="template-demo">
+            <div class="mdc-layout-grid__inner" id="listedProject">
+              <!-- <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12"> -->
+                <!-- <div class="" id="listedProject"> -->
+                <!-- </div> -->
+              <!-- </div> -->
+
+            </div>
+            </div>
+            </div>
+              </div>
+            </div>
+          </div>
+        </main>
+        <!-- partial:../../partials/_footer.html -->
+        <footer>
+          <div class="mdc-layout-grid">
+            <div class="mdc-layout-grid__inner">
+              <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6-desktop">
+                <span class="text-center text-sm-left d-block d-sm-inline-block tx-14">Copyright © <a href="https://www.bootstrapdash.com/" target="_blank">bootstrapdash.com </a>2020</span>
+              </div>
+              <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6-desktop d-flex justify-content-end">
+                <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center tx-14">Free <a href="https://www.bootstrapdash.com/material-design-dashboard/" target="_blank"> material admin </a> dashboards from Bootstrapdash.com</span>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+    </div>
+  </div>
+  <!-- plugins:js -->
+  <script src="{{ url_for('static',filename='vendors/js/vendor.bundle.base.js')}}"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+  <script src="{{ url_for('static',filename='js/material.js')}}"></script>
+  <script src="{{ url_for('static',filename='js/misc.js')}}"></script>
+  <script src="{{ url_for('static',filename='js/listedProject.js')}}"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <!-- End custom js for this page-->
+</body>
+</html>

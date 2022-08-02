@@ -1,0 +1,31 @@
+    [
+        {"id":1,
+        "name":"Nyati Elysia 1",
+        "location":"Kharadi",
+        "status":"Active"
+        },
+        {"id":2,
+            "name":"Nyati Elysia 2",
+            "location":"Kharadi",
+            "status":"Active"
+        },
+        {"id":3,
+            "name":"Nyati Elysia 3",
+            "location":"Kharadi",
+            "status":"Listed"
+        },
+        {"id":4,
+            "name":"Nyati Elysia 4",
+            "location":"Kharadi",
+            "status":"Active"
+        }
+        ,
+        {"id":5,
+            "name":"Nyati Elysia 5",
+            "location":"Kharadi",
+            "status":"Listed"
+        }
+
+
+    ]
+
