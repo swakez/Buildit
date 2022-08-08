@@ -31,7 +31,7 @@ manager = Manager(app)
 
 @manager.command
 def run():
-    app.run()
+    app.run(debug=True)
     # app.run(host='localhost',port=6428)
 
 
@@ -45,8 +45,9 @@ def test():
     return 1
 
 
-@app.route('/home')
+@app.route('/index')
 def index():
+    # print('hh')
     return render_template('index.html')
 
 
@@ -64,7 +65,7 @@ def list_projects():
 def list_projects_details():
     return render_template('listed_project_detail.html')
 
-@app.route('/index')
+@app.route('/')
 def landingpage():
     return render_template('landingpage.html')
 
